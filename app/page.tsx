@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, Stethoscope, User, Calendar, AlertTriangle, MapPin } from "lucide-react";
+import { Search, Stethoscope, User, Calendar, AlertTriangle, MapPin, Video } from "lucide-react";
 
 export default function Home() {
   return (
@@ -155,6 +155,30 @@ export default function Home() {
                   phone call.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Telehealth Section */}
+        <section className="bg-blue-50 py-20">
+          <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2 text-center md:text-left">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                See a Doctor From Home
+              </h2>
+              <p className="text-gray-600 text-lg mb-8">
+                With NearCare Telehealth, you can have a virtual visit with a
+                qualified provider using your phone, tablet, or computer.
+              </p>
+              <Link
+                href="/telehealth"
+                className="inline-flex items-center bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition-all shadow-lg"
+              >
+                Learn About Telehealth
+              </Link>
+            </div>
+            <div className="md:w-1/2 flex justify-center">
+              <Video className="h-48 w-48 text-blue-300" />
             </div>
           </div>
         </section>
