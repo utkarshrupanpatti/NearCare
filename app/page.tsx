@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, Stethoscope, User, Calendar } from "lucide-react";
+import { Search, Stethoscope, User, Calendar, AlertTriangle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -61,6 +61,31 @@ export default function Home() {
                 <Search className="mr-3 h-6 w-6" />
                 Find Care Now
               </button>
+            </div>
+          </div>
+        </section>
+
+        {/* Urgent Care Triage Section */}
+        <section className="bg-red-50 border-y border-red-200 py-16">
+          <div className="container mx-auto px-6 text-center">
+            <div className="max-w-3xl mx-auto">
+              <AlertTriangle className="h-12 w-12 text-red-500 mx-auto mb-4" />
+              <h2 className="text-3xl font-bold text-gray-800 mb-3">
+                Need Care Urgently?
+              </h2>
+              <p className="text-gray-600 mb-8">
+                For a life-threatening emergency, call 911 immediately. For
+                urgent, non-life-threatening issues, we can help you find the
+                right care center quickly.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:911" className="w-full sm:w-auto flex items-center justify-center bg-red-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-red-700 transition-all shadow-lg">
+                  Call 911
+                </a>
+                <button className="w-full sm:w-auto flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 text-lg font-semibold px-8 py-4 rounded-full hover:bg-blue-50 transition-all shadow-lg">
+                  Find Urgent Care
+                </button>
+              </div>
             </div>
           </div>
         </section>
