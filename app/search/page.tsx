@@ -177,13 +177,3 @@ export default function SearchPage({
     </div>
   );
 }
-
-
-```
-
-Now, when a user performs a search on your homepage, they will be taken to this new, fully-featured search results page.
-
-<!--
-[PROMPT_SUGGESTION]Refactor the Header and Footer into reusable components.[/PROMPT_SUGGESTION]
-[PROMPT_SUGGESTION]Implement the filter functionality on the search page.[/PROMPT_SUGGESTION]
--->
